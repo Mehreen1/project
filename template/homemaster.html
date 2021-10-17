@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap Jq -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> <!-- or use local jquery -->
+    <script src="/js/jqBootstrapValidation.js"></script>
+    <script> src="js/jquery-1.11.2.min.js" </script>
+    <script> src="js/bootstrap.min.js" </script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+     
+
+    <link href="{{ url_for('static', filename= 'assets/css/styles.css')}}" rel="stylesheet" />   
+     <title>gren</title>
+   </head>
+<body class="ml">
+   <!-- ======= Header ======= -->
+   <div class="bg-nav d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom">
+      <h5 class="text-light my-0 mr-md-auto font-weight-normal">Grievance managemant system </h5>
+      <nav class=" mt-2 mt-md-0 ms-md-auto ">
+        <a class="p-2 text-light fa fa-home" href="/home">Home</a>
+        <a class="p-2 text-light fas fa-sticky-note" href="/about">About</a>
+        <!-- <a class="p-2 text-light " href="#">Support</a>
+        <a class="p-2 text-light " href="#"> Details</a> -->
+
+      
+      <a class="p-2 btn text-light style=font-size:48px fa fa-power-off" href="/logout">Login</a>
+      <a class="p-2 btn text-light fa fa-trash-o style = font-size:36px " href="/signout "> SignOut</a>
+
+    </div>
+
+  </nav>
+    <div class="container">
+        {%block body%}
+        {%endblock%}
+      </div>
+
+
+
+ <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <script>
+      $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+    </script>
+    </div> 
+
+<div class="footer border flex-md-row align-items-lift  bg-nav d-flex flex-column  px-md-3 mb-2  "  method="GET" action="/footer">
+    <h6 class="p-4 text-light my-0 mr-md-auto font-weight-normal fa fa-copyright " > Created by MM 2021</h6>  
+    <h5 class=" p-4 text-light my-0 mr-md-auto font-weight-normal fa fa-phone "> +92-81-9211292  </h5>
+    <li class="p-4 btn  fc text-light my-0 mr-md-auto font-weight-normal fa fa-user-circle-o "> <a href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fgsouob%2Finfo%2F%3Ftab%3Doverview">Facebook </a> </li>
+    <li class="p-4 btn fc text-light my-0 mr-md-auto font-weight-normal fa fa-external-link "> <a href="http://www.uob.edu.pk/gso/Computer-Sciences.html" > Link</a></i>
+    <li class="p-4 btn fc text-light my-0 mr-md-auto font-weight-normal 	fa fa-envelope " > <a href="gso@um.uob.edu.pk / gso@uob.edu.pk" > Email: gso@um.uob.edu.pk / gso@uob.edu.pk</a></i>
+    
+ 
+</body>
+</html>

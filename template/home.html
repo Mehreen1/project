@@ -1,0 +1,86 @@
+{% extends "homemaster.html" %}
+    {%block title%}
+       homepage
+    {%endblock%}
+
+{%block body%}
+
+<!-- container -->
+    <div class = "container">
+        <div class="row">
+            <div class="col-md-9">
+                <h1 class="text-dark display-4 " style="font-size:40px">Description</h1>
+                <h1 class="text-dark display-4 " style="font-size:20px">
+                    <p>
+                    <ul>
+                        <li>Student satisfaction is a major concern for any educational institution.
+                            </li>
+                    <br>
+                        <li>However, many times that person fails to express their concerns and problems or fails to reach out to the organization for appropriate help.
+                            </li>
+                    <br>
+                        <li>Nor is there a system that resolves disputes or problems facing that person.
+                            </li>
+                    <br>
+                        <li>This website basically helps a person to communicate with the institute and discuss their problems.</li>
+                    <br>
+                        <li>It is still helpful for any institute to make sure that the problems of the person and the problems of the person are solved. 
+                            </li>
+                    <br>
+                        <li>First, log on to this website and register yourself then you have to fill in your complaint/opinion form.
+                            </li>
+                    <br>
+                        <li> Provide information about yourself and if there is a problem or issue, write and submit it and it will be sent to your institute.
+                        </li>
+                    <br>
+                        <li>The person can lodge their complaints through this system which will be redressed by the institute.
+                            </li>
+                    <br>
+                        <li>Person grievance/feedback cell will also look into matters of harassment thus creating a protective environment for the person.
+                           </li>
+                    <br>
+                        <li> A person may approach the cell to voice their grievances/feedback regarding academic matters, health services, library, and other services.
+                            </li>
+                    <br>
+                        <li> Anyone with a genuine grievance may approach the Co-ordinator or member of the person’s Grievance cell, grievances cell is formed in order to keep the healthy working atmosphere amongst staff and person, Admin can view the resolving status of all grievance.
+
+                        </li>
+                    </p>
+                    </ul>
+
+            </div>
+            <div class="col-md-6 ">
+                <div class="card mt-85">
+                    <div class="card-body ">
+                        <h2> Grievance/Feedbaak Box</h2>
+                        <form class ="form" method="POST" action="/homepage">
+                            <label >First-Name</label><br>
+                            <input type="text"  placeholder="Enter Your First_Name" name="F_Name" class="form-control"><br>
+                            <label >Last-Name</label><br>
+                            <input type="text"  placeholder="Enter Your Last_Name" name="L_Name" class="form-control"><br>
+                            <label >Contect Number</label><br>
+                            <input type="Phone NO" name="Contect_Number"  placeholder="Enter Your Contect_Number" class="form-control"><br>
+                            <label >Email</label><br>
+                            <input type="email" name="email"  placeholder="Enter Your Email" class="form-control" required="required" data-validation-required-message ="Please enter your email"><br>
+                            <label >Grievance/feedback</label><br>
+                            <textarea type="message" id="message" name="message"  placeholder="Enter Your Message" rows="8" cols="50"required="required" data-validation-required-message ="Please enter your Message"></textarea><br>
+                            {%for mess in get_flashed_messages() %}
+                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                                </button>
+                                {{mess}}
+                              </div>
+                              {%endfor%}
+                              <form method="POST">
+                              {{form.hidden_tag()}}
+                              {{form.submit()}}
+                          </form>
+                         
+                </div>
+            </div>
+        </div>
+    </div>
+       
+        </form>
+    
+    {%endblock%}

@@ -1,0 +1,24 @@
+{% extends "homemaster.html" %}
+{%block title%}
+  
+{%endblock%}
+{%block body%}
+
+  <form class="form-horizontal" action="{{url_for('update', id = id)}}" method="post" >
+
+    <form class="form-horizontal" action="{{url_for('update', id = id)}}" method="post" >
+      <label >First_Name</label><br>
+      <input type="text" name="F_Name"  placeholder="Enter Your First_Name" required="required" value="{{sign.email}}" data-validation-required-message ="Please enter your First Name" class="form-control"><br>
+      <label >Last_Name</label><br>
+      <input type="text" name="L_Name"  placeholder="Enter Your Last_Name" class="form-control" value="{{sign.email}}" required="required" data-validation-required-message ="Please enter your Last Name"><br>
+      
+      <label >Email</label><br>
+      <input type="email" name="email"  placeholder="Enter Your Email" required="required" value="{{sign.email}}" data-validation-required-message ="Please enter your email" class="form-control"><br>
+      
+      <label >Password</label><br>
+      <input type="password" name="password"  class="form-control" required="required" value="{{sign.email}}" data-validation-required-message ="password"><br>
+      
+      
+      <input type="submit" class="form-control btn btn-primary btn-block btn-lg" value="login">
+  </form>
+  {%endblock%}

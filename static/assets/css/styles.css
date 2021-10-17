@@ -1,0 +1,55 @@
+.bg-nav{
+    background: #c94b4b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4b134f, #c94b4b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }    
+
+.mt-100{
+    margin-top:100px;
+}
+
+.ml{
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+.st{ 
+    font-size:65px;
+    font-family: 'Merriweather';
+    margin-top: 88px;
+
+}
+.copyrightL{
+    margin-top: 140px;
+    font-family:'Times New Roman', Times, serif;
+    color:#999999	;
+   }
+.copyrightS{
+    margin-top: 75px;
+    font-family:'Times New Roman', Times, serif;
+    color:#999999	;
+   }
+
+.aboutH{
+        top: auto;
+        text-align: center;
+        width: 140%;
+        padding: 10px;
+   }
+
+.aboutP{
+    text-align: center;
+    width: 140%;
+}
+.footer {
+    position: none;
+    left: 100;
+    bottom: 100;
+    width: 100%;
+    text-align: none;
+    margin-block-end: 100;
+}
+.fc{
+    color: #FFFFFF;
+}

@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+    {%block title%}
+    signin
+    {%endblock%}
+
+{%block body%}
+
+
+    <!-- container -->
+    <div class = "container">
+        <div class="row">
+            <div class="col-md-8">
+               <h1 class="text-light display-4 mt-80 st" >Give Your Grievance <br> and Feedback</h1>
+               <div class="shorttitle  text-light " size="5" >
+                 
+                <i >  Stay Connected With Organization
+               </i>                 	 
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mt-90">
+                    <div class="card-body ">
+                    <h1> </h1>
+                        <form class ="form" method="POST" action="/sign_in">
+
+                            <label >First_Name</label><br>
+                            <input type="text" name="F_Name"  placeholder="Enter Your First_Name" required="required" data-validation-required-message ="Please enter your First Name" class="form-control"><br>
+                            <label >Last_Name</label><br>
+                            <input type="text" name="L_Name"  placeholder="Enter Your Last_Name" class="form-control" required="required" data-validation-required-message ="Please enter your Last Name"><br>
+                            
+                            <label >Email</label><br>
+                            <input type="email" name="email"  placeholder="Enter Your Email" required="required" data-validation-required-message ="Please enter your email" class="form-control"><br>
+                            
+                            <label >Password</label><br>
+                            <input type="password" name="password"  class="form-control" required="required" data-validation-required-message ="password"><br>
+                            
+                            
+                            <input type="submit" class="form-control btn btn-primary btn-block btn-lg" value="login">
+                            <!-- {% for message in get_flashed_messages() %}
+                            <div  class="alert-error"> <i> {{ message }} </i> </div>
+                            {% endfor %}   -->
+                        </form>
+                        <p class="mt-1">Already a member?<a href="/login">Login Here</a></p>                      
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class='copyrightS'>
+        <i aria-hidden="true"> <p>Created by MM.<br>  © CopyRight 2021</i></p>
+    </footer>
+    
+    {%endblock%}

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+   
+{%block title%}
+   login
+    {%endblock%}
+
+{%block body%}
+
+    <!-- container -->
+    <div class = "container">
+        <div class="row">
+            <div class="col-md-7">
+               <h1 class="text-light display-4 mt-90 st"> Give Your Grievance <br> and Feedback</h1>
+            
+            <div class="shorttitle  text-light " size="5" >
+                 
+             <i >  Stay Connected With Organization
+            </i>                 	 
+               </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mt-100">
+                    <div class="card-body ">
+                        <form class ="form" method="POST" action="/login">
+                            <label >Email</label><br>
+                            <input type="email" class="form-control" name="email" required="required" data-validation-required-message ="Please enter your email"><br>
+                            <label >Password</label><br>
+                            <input type="password" class="form-control" name="password"required="required" data-validation-required-message ="Please enter your password"><br>
+                            <input type="submit" class="form-control btn btn-primary btn-block btn-lg" value="login">
+                            
+                        </form>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                          </label>
+                        </div>
+                        <p class="mt-1">Not a member? <a href="/signin">Create Account</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class='copyrightL'>
+        <i aria-hidden="true"> <p>Created by MM.<br>  © CopyRight 2021</i></p>
+    </footer>
+{%endblock%}
+
